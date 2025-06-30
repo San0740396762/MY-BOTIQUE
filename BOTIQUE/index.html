@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boutique Shop</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #292929;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #444;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 15px;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #666;
+    }
+
+    section {
+      text-align: center;
+      padding: 50px 20px;
+      border-bottom: 1px solid #eee;
+    }
+
+    section img {
+      width: 250px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-top: 15px;
+    }
+
+    .buy-button {
+      background-color: #28a745;
+      color: white;
+      padding: 12px 25px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    .buy-button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+  
+  <header>
+    <h1> FASHION IS OUR HOME </h1>
+  </header>
+    <!-- Top Slideshow Banner -->
+    
+  <header>
+    <h1>YOUR LOOK IS OUR SERVICE</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">HOME</a>
+    <a href="shoes.html">  Available Shoes</a>
+    <a href="shirts.html"> Available Shirts</a>
+    <a href="trouser.html">Available Trousers</a>
+    <a href="dress.html">Available Dresses</a>
+    <a href="buy.html">Buy</a> <!-- 👈 New Link -->
+  </nav>
+
+
+  <div class="slideshow-container">
+    <!-- Shoes -->
+    <div class="slide fade"><img src="images/shoe1.jpg" alt="Black Sneakers" /></div>
+    <div class="slide fade"><img src="images/shoe2.jpg" alt="White Trainers" /></div>
+    <div class="slide fade"><img src="images/shoe3.jpg" alt="Red Sports Shoes" /></div>
+    <div class="slide fade"><img src="images/shoe4.jpg" alt="Blue Canvas" /></div>
+    <div class="slide fade"><img src="images/shoe5.jpg" alt="Green Runners" /></div>
+    <div class="slide fade"><img src="images/shoe6.jpg" alt="Formal Leather" /></div>
+
+    <!-- Shirts -->
+    <div class="slide fade"><img src="images/SHIRT1.jpg" alt="American Shirt" /></div>
+    <div class="slide fade"><img src="images/SHIRT2.jpg" alt="Canadian Shirt" /></div>
+
+    <!-- Trousers -->
+    <div class="slide fade"><img src="images/trouser1.jpg" alt="American Trouser" /></div>
+    <div class="slide fade"><img src="images/trouser1.jpg" alt="Canadian Trouser" /></div>
+    <div class="slide fade"><img src="images/trouser2.jpg" alt="Kenyan Trouser" /></div>
+    <div class="slide fade"><img src="images/trouser3.jpg" alt="Tanzanian Trouser" /></div>
+    <div class="slide fade"><img src="images/trouser4.jpg" alt="Slim Fit Trouser" /></div>
+
+    <!-- Dresses -->
+    <div class="slide fade"><img src="images/dress1.jpg" alt="Sundress" /></div>
+    <div class="slide fade"><img src="images/dress2.jpg" alt="American Dress" /></div>
+    <div class="slide fade"><img src="images/dress3.jpg" alt="Hot Summer Dress" /></div>
+    <div class="slide fade"><img src="images/dress4.jpg" alt="All Time Dress" /></div>
+
+    <!-- Arrows -->
+    <a class="prev">&#10094;</a>
+    <a class="next">&#10095;</a>
+  </div>
+  <div class="side-image left-side">
+    <img src="images/left-banner.jpg" alt="Left Banner">
+  </div>
+  
+  <div class="side-image right-side">
+    <img src="images/right-banner.jpg" alt="Right Banner">
+  </div>
+  
+  <main>
+    <section id="clothes">
+      <h2>Clothes</h2>
+      <img src="images/clothes.jpg" alt="Clothes" />
+    </section>
+
+  <!-- Example for shoes -->
+  <section id="shoes">
+    <h2>Shoes</h2>
+    <div class="product-gallery">
+      <div class="product" data-id="S001" data-name="Black Sneakers">
+        <img src="images/shoe1.jpg" alt=" Sneakers" />
+        <p>S001 -  Sneakers</p>
+      </div>
+      <div class="product" data-id="S002" data-name="White Trainers">
+        <img src="images/shoe2.jpg" alt="Trainers" />
+        <p>S002 -  Trainers</p>
+      </div>
+      <div class="product" data-id="S003" data-name="Red Sports Shoes">
+        <img src="images/shoe3.jpg" alt=" Sports Shoes" />
+        <p>S003 -  Sports Shoes</p>
+      </div>
+      <div class="product" data-id="S004" data-name="Blue Canvas">
+        <img src="images/shoe4.jpg" alt=" Canvas" />
+        <p>S004 -  Canvas</p>
+      </div>
+      <div class="product" data-id="S005" data-name="Green Runners">
+        <img src="images/shoe5.jpg" alt=" Runners" />
+        <p>S005 - Runners</p>
+      </div>
+      <div class="product" data-id="S006" data-name="Formal Leather">
+        <img src="images/shoe6.jpg" alt="Formal Leather" />
+        <p>S006 - Formal Leather</p>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="shirt">
+    <h2>Shirts</h2>
+    <div class="product-gallery">
+      <div class="product" data-id="SH001" data-name="American Shirt">
+        <img src="images/SHIRT1.jpg" alt="American Shirt" />
+        <p>SH001 - American Shirt</p>
+      </div>
+      <div class="product" data-id="SH002" data-name="Canadian Shirt">
+        <img src="images/SHIRT2.jpg" alt="Canadian Shirt" />
+        <p>SH002 - Canadian Shirt</p>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="trouser">
+    <h2>Trousers</h2>
+    <div class="product-gallery">
+      <div class="product" data-id="T001" data-name="American Trouser">
+        <img src="images/trouser1.jpg" alt="American Trouser" />
+        <p>T001 - American Trouser</p>
+      </div>
+      <div class="product" data-id="T002" data-name="Canadian Trouser">
+        <img src="images/trouser1.jpg" alt="Canadian Trouser" />
+        <p>T002 - Canadian Trouser</p>
+      </div>
+      <div class="product" data-id="T003" data-name="Kenyan Trouser">
+        <img src="images/trouser2.jpg" alt="Kenyan Trouser" />
+        <p>T003 - Kenyan Trouser</p>
+      </div>
+      <div class="product" data-id="T004" data-name="Tanzanian Trouser">
+        <img src="images/trouser3.jpg" alt="Tanzanian Trouser" />
+        <p>T004 - Tanzanian Trouser</p>
+      </div>
+      <div class="product" data-id="T005" data-name="Slim Fit Trouser">
+        <img src="images/trouser4.jpg" alt="Slim Fit Trouser" />
+        <p>T005 - Slim Fit Trouser</p>
+      </div>
+    </div>
+  </section>
+  
+  
+      <section id="dress">
+        <h2>Dresses</h2>
+        <div class="product-gallery">
+          <div class="product" data-id="D001" data-name="Sundress">
+            <img src="images/dress1.jpg" alt="Sundress" />
+            <p>D001 - Sundress</p>
+          </div>
+          <div class="product" data-id="D002" data-name="American Dress">
+            <img src="images/dress2.jpg" alt="American Dress" />
+            <p>D002 - American Dress</p>
+          </div>
+          <div class="product" data-id="D003" data-name="Hot Summer Dress">
+            <img src="images/dress3.jpg" alt="Hot Summer Dress" />
+            <p>D003 - Hot Summer Dress</p>
+          </div>
+          <div class="product" data-id="D004" data-name="All Time Dress">
+            <img src="images/dress4.jpg" alt="All Time Dress" />
+            <p>D004 - All Time Dress</p>
+          </div>
+        </div>
+      </section>
+      
+    <!-- 💳 BUY SECTION -->
+    <section id="buy">
+      <h2>Buy Now</h2>
+      <p>Select your favorite outfit and proceed to checkout.</p>
+      <button class="buy-button" onclick="alert('Proceeding to checkout...')">Checkout</button>
+    </section>
+  </main>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('.slide');
+    const prev = document.querySelector('.prev');
+    const next = document.querySelector('.next');
+  
+    function showSlide(n) {
+      slideIndex = (n + slides.length) % slides.length;
+      slides.forEach((slide, i) => {
+        slide.style.display = i === slideIndex ? 'block' : 'none';
+      });
+    }
+  
+    function autoSlide() {
+      showSlide(slideIndex + 1);
+    }
+  
+    next.addEventListener('click', () => showSlide(slideIndex + 1));
+    prev.addEventListener('click', () => showSlide(slideIndex - 1));
+  
+    showSlide(slideIndex);
+    setInterval(autoSlide, 4000);
+  });
+</script>
+  <script src="main.js"></script>
+</body>
+</html>

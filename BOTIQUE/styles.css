@@ -1,0 +1,206 @@
+/* ------------------------------
+   RESET & BASE STYLING
+------------------------------ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f6fa;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* ------------------------------
+     HEADER & NAVIGATION
+  ------------------------------ */
+  header {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 1px;
+  }
+  
+  nav {
+    background-color: #e9ecef;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #007bff;
+  }
+  
+  /* ------------------------------
+     CHECKOUT FORM CONTAINER
+  ------------------------------ */
+  .checkout-container {
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  }
+  
+  .checkout-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #222;
+    font-size: 26px;
+  }
+  
+  /* ------------------------------
+     FORM INPUTS
+  ------------------------------ */
+  .checkout-container label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .checkout-container input,
+  .checkout-container select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .checkout-container input:focus,
+  .checkout-container select:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* ------------------------------
+     SUBMIT BUTTON
+  ------------------------------ */
+  .checkout-container button {
+    margin-top: 25px;
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .checkout-container button:hover {
+    background-color: #218838;
+  }
+  
+  /* ------------------------------
+     FEEDBACK / ALERT MESSAGES
+  ------------------------------ */
+  .form-alert {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  .form-alert.success {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .form-alert.error {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* ------------------------------
+     BACK LINK
+  ------------------------------ */
+  .back-link {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .back-link a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .back-link a:hover {
+    text-decoration: underline;
+  }
+  /* Navigation arrows - centered vertically & styled */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 36px;
+    color: #fff;
+    padding: 10px 16px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 100;
+    transition: background-color 0.3s ease;
+  }
+  
+  .prev {
+    left: 20px;
+  }
+  
+  .next {
+    right: 20px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .side-image {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 120px;
+    height: auto;
+    z-index: 10;
+  }
+  
+  .left-side {
+    left: 0;
+  }
+  
+  .right-side {
+    right: 0;
+  }
+  
+  .side-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+  
